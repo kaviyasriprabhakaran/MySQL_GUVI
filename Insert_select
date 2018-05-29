@@ -1,0 +1,36 @@
+CREATE DATABASE my;
+show databases;
+use my;
+CREATE TABLE my
+(
+    last_name   VARCHAR(15) NOT NULL,
+    first_name  VARCHAR(15) NOT NULL,
+    district varchar(20),
+    state varchar(20),
+    age int,
+    years int,
+    days int,
+    weight float,
+    height float,
+    salary float
+    
+   
+); 
+insert into my values("sri","kaviya","chennai","tn",20,5,100,40.6,4.5,20000.50);
+insert into my values("suresh","keerthi","trichy","tn",22,4,98,42.6,5.0,2200.52);
+insert into my values("nayaa","abi","cbe","tn",28,6,95,45.6,5.2,25000.20);
+insert into my values("devi","saranya","palakadu","kerala",30,6,100,43.7,4.2,28000.50);
+insert into my values("lakshmi","dhivya","guruvayur","kerala",21,4,87,52.2,4.7,2400.80);
+insert into my values("kambir","gautham","coorg","karnataka",27,3,94,51.2,4.1,2420.80);
+insert into my values("raj","kumar","kudagu","karnataka",29,6,82,47.2,5.7,24078.80);
+insert into my values("priya","hari","","karnataka",27,8,80,39.2,3.7,25891.80);
+insert into my values("padukone","deEpika","kudagu","karnataka",33,9,96,43.8,4.7,2478.80);
+insert into my values("raina","suresh","kadag","karnataka",32,5,80,32.3,4.4,2591.80);
+select age,weight from my;
+select first_name from my where state="tn";
+select height from my where salary<=2500;
+select * from my;
+select first_name,salary from my where district="guruvayur";
+
+
+
